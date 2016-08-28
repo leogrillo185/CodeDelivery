@@ -34,20 +34,9 @@ class OrdersController extends Controller
 
     public function update(Request $request, $id){
         try{
-            //Da maneira abaixo não funcionou de jeito nenhum
-            // Também não gera qualquer erro
-            /*$all = $request->all();
+            $all = $request->all();
             $this->orderRepository->update($all, $id);
-            return redirect()->route('admin.orders');*/
-            
-            //A solução encontrada foi atualizar desta maneira.
-            $order = Order::find($id);
-            $order->user_deliveryman_id = $request->get('user_deliveryman_id');
-            $order->status = $request->get('status');
-            $order->save();
-
             return redirect()->route('admin.orders');
-
         }catch(Exception $e){
             echo $e->getMessage();
         }

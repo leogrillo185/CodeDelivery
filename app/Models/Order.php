@@ -12,25 +12,34 @@ class Order extends Model implements Transformable
 
     protected $fillable = [
         'client_id',
-        'user_deliveryman_id'.
+        'user_deliveryman_id',
+        'cupom_id',
         'total',
         'status'
     ];
 
+    public function cupoms(){
+        return $this->hasMany(Cupom::class);
+    }
 
-    public function client(){
+
+    public function client()
+    {
         return $this->belongsTo(Client::class);
     }
 
-    public function products(){
+    public function products()
+    {
         return $this->hasMany(Product::class);
     }
 
-    public function items(){
+    public function items()
+    {
         return $this->hasMany(OrderItem::class);
     }
 
-    public function deliveryman(){
+    public function deliveryman()
+    {
         return $this->belongsTo(User::class, 'user_deliveryman_id', 'id');
     }
 
