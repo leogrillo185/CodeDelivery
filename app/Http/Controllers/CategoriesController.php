@@ -1,0 +1,47 @@
+<?php
+
+namespace CodeDelivery\Http\Controllers;
+
+use CodeDelivery\Http\Requests;
+use CodeDelivery\Repositories\CategoryRepository;
+use CodeDelivery\Http\Requests\AdminCategoryRequest;
+use Illuminate\Http\Request;
+
+class CategoriesController extends Controller
+{
+
+    /**
+     * @var CategoryRepository
+     */
+    private $repository;
+
+    public function __construct(CategoryRepository $repository){
+        $this->repository = $repository;
+    }
+
+    public function index(){
+        $categories  = $this->repository->paginate(15);
+        return view('admin.categories.index', compact('categories'));
+    }
+
+    public function create(){
+        return view('admin.categories.create');
+    }
+
+    public function store(AdminCategoryRequest $request){
+        $this->repository->create($request->all());
+        return redirect()->route('admin.categories');
+    }
+
+    public function edit($id){
+        $category = $this->repository->find($id);
+        return view('admin.categories.edit', compact('category'));
+    }
+
+    public function update(AdminCategoryRequest $request, $id){
+        $category = $request->all();
+        $this->repository->update($category, $id);
+        return redirect()->route('admin.categories')->with(['status' => 'Categoria alterada com sucesso!']);
+    }
+
+}
