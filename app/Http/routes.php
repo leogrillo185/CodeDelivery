@@ -4,10 +4,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('welcome');
-});
-
 Route::group(['prefix'=> 'admin', 'middleware' => 'auth.checkrole:admin' , 'as' => 'admin.'], function(){
 
     Route::group(['prefix' => 'categories', 'as' => 'categories'], function(){
@@ -59,3 +55,21 @@ Route::group(['prefix' => 'customers', 'middleware' => 'auth.checkrole:client', 
     Route::post('orders/store', ['as' => 'orders.store', 'uses' => 'CheckoutController@store']);
 });
 
+Route::post('oauth/access_token', function() {
+    return Response::json(Authorizer::issueAccessToken());
+});
+
+Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], function(){
+    Route::get('pedidos',function(){
+        return[
+          'id'=> 1,
+          'client' => 'Leonardo Grillo'
+        ];
+    });
+
+    Route::get('teste',function(){
+        return[
+            'success' => true
+        ];
+    });
+});
