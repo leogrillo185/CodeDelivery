@@ -18,10 +18,9 @@ class Order extends Model implements Transformable
         'status'
     ];
 
-    public function cupoms(){
-        return $this->hasMany(Cupom::class);
+    public function cupom(){
+        return $this->belongsTo(Cupom::class);
     }
-
 
     public function client()
     {

@@ -74,7 +74,7 @@ class OrderService
 
             $order->save();
             DB::commit();
-
+            return $order;
         }catch(\Exception $e){
             //desfaz as alterações no banco
             DB::rollback();
