@@ -18,6 +18,7 @@ class Order extends Model implements Transformable
         'status'
     ];
 
+
     public function cupom(){
         return $this->belongsTo(Cupom::class);
     }
@@ -41,5 +42,6 @@ class Order extends Model implements Transformable
     {
         return $this->belongsTo(User::class, 'user_deliveryman_id', 'id');
     }
+
 
 }

@@ -21,8 +21,10 @@ class UsersController extends Controller
 
     public function authenticated(){
         $id = Authorizer::getResourceOwnerId();
-        $user = $this->userRepository->with('client')->find($id);
-        return $user;
+        return $this->userRepository
+            ->skipPresenter(false)
+            ->find($id);
+
     }
 
 
