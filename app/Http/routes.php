@@ -55,37 +55,39 @@ Route::group(['prefix' => 'customers', 'middleware' => 'auth.checkrole:client', 
     Route::post('orders/store', ['as' => 'orders.store', 'uses' => 'CheckoutController@store']);
 });
 
-Route::post('oauth/access_token', function() {
-    return Response::json(Authorizer::issueAccessToken());
-});
+Route::group(['middleware' => 'cors'], function(){
 
-Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], function(){
-
-    Route::get('authenticated', ['as' => 'authenticated', 'uses' => 'UsersController@authenticated']);
-
-    Route::group(['prefix' => 'client', 'middleware' => 'oauth.checkrole:client', 'as' => 'client.'], function(){
-       Route::resource(
-           'order',
-           'Api\Client\ClientCheckoutController',
-           ['except'=> ['create', 'edit', 'destroy']
-       ]);
+    Route::post('oauth/access_token', function() {
+        return Response::json(Authorizer::issueAccessToken());
     });
 
-    Route::group(['prefix' => 'deliveryman', 'middleware' => 'oauth.checkrole:deliveryman', 'as' => 'deliveryman.'], function(){
-        Route::resource(
-            'order',
-            'Api\Deliveryman\DeliverymanCheckoutController',
-            ['except'=> ['create', 'edit', 'destroy', 'store']
-        ]);
+    Route::group(['prefix' => 'api', 'middleware' => 'oauth', 'as' => 'api.'], function(){
 
-        Route::patch(
-            'order/{id}/update-status',[
-              'uses' => 'Api\Deliveryman\DeliverymanCheckoutController@updateStatus',
-              'as' => 'orders.update_status'
-            ]
-        );
+        Route::get('authenticated', ['as' => 'authenticated', 'uses' => 'UsersController@authenticated']);
+
+        Route::group(['prefix' => 'client', 'middleware' => 'oauth.checkrole:client', 'as' => 'client.'], function(){
+            Route::resource(
+                'order',
+                'Api\Client\ClientCheckoutController',
+                ['except'=> ['create', 'edit', 'destroy']
+                ]);
+        });
+
+        Route::group(['prefix' => 'deliveryman', 'middleware' => 'oauth.checkrole:deliveryman', 'as' => 'deliveryman.'], function(){
+            Route::resource(
+                'order',
+                'Api\Deliveryman\DeliverymanCheckoutController',
+                ['except'=> ['create', 'edit', 'destroy', 'store']
+                ]);
+
+            Route::patch(
+                'order/{id}/update-status',[
+                    'uses' => 'Api\Deliveryman\DeliverymanCheckoutController@updateStatus',
+                    'as' => 'orders.update_status'
+                ]
+            );
+        });
+
     });
-
-
-
 });
+
