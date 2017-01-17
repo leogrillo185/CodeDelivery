@@ -1,20 +1,27 @@
 <ion-view>
     <ion-nav-title>Code Delivery - Login</ion-nav-title>
-    <ion-content class="padding">
-        <form name="form" ng-submit="login()">
-            <div class="list list-inset">
+    <ion-content id="login" class="padding">
+        <div id="menu_logo" class="text-center">
+            <img src="img/logo_code.png" class="img-responsive center-block">
+        </div>
+        <form name="form" ng-submit="login()" style="max-width: 250px; margin: 0 auto;">
+            <h2 class="title text-center title-grey">Entrar</h2>
+
+            <div class="list">
                 <label class="item item-input">
                     <input type="text" name="username" placeholder="login"
                            ng-model="user.username" required="required"/>
                 </label>
-            </div>
-            <div class="list list-inset">
+
                 <label class="item item-input">
                     <input type="password" name="password" placeholder="senha"
-                           ng-model="user.password" required="required" />
+                           ng-model="user.password"  required="required"/>
                 </label>
+
             </div>
-            <button type="submit" class="button button-full button-calm">Entrar</button>
+            <div class="text-center">
+                <button type="submit" class="button button-full button-calm">Entrar</button>
+            </div>
         </form>
     </ion-content>
 </ion-view>

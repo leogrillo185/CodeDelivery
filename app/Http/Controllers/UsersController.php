@@ -24,7 +24,6 @@ class UsersController extends Controller
         return $this->userRepository
             ->skipPresenter(false)
             ->find($id);
-
     }
 
 
