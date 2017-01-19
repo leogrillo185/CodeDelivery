@@ -1,10 +1,17 @@
 angular.module('starter.controllers')
     .controller('ClientCheckoutCtrl',
-        ['$scope', '$state', '$cart', 'Order', '$ionicPopup', '$ionicLoading', 'User',
-            function ($scope, $state, $cart, Order, $ionicPopup, $ionicLoading, User) {
-
+        ['$scope', '$state', '$cart', 'Cupom', 'Order', '$ionicPopup', '$ionicLoading',
+            function ($scope, $state, $cart, Cupom, Order, $ionicPopup, $ionicLoading ) {
+                /*
                 User.authenticated({include: 'client'}, function(data){
                     console.log(data.data);
+                });
+                */
+
+                Cupom.get({code: 9361}, function(data){
+                    console.log(data);
+                },function(responseError){
+
                 });
 
                 var cart = $cart.get();
@@ -19,6 +26,7 @@ angular.module('starter.controllers')
                     //atualixa o total do carrinho
                     $scope.total = $cart.get().total;
                 };
+
 
                 $scope.openListProducts = function (i) {
                     $state.go('client.view_products');
