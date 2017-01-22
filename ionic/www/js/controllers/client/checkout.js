@@ -1,22 +1,12 @@
 angular.module('starter.controllers')
     .controller('ClientCheckoutCtrl',
-        ['$scope', '$state', '$cart', 'Cupom', 'Order', '$ionicPopup', '$ionicLoading',
-            function ($scope, $state, $cart, Cupom, Order, $ionicPopup, $ionicLoading ) {
-                /*
-                User.authenticated({include: 'client'}, function(data){
-                    console.log(data.data);
-                });
-                */
-
-                Cupom.get({code: 9361}, function(data){
-                    console.log(data);
-                },function(responseError){
-
-                });
+        ['$scope', '$state', '$cart', 'Cupom', 'Order', '$ionicPopup', '$ionicLoading', '$cordovaBarcodeScanner',
+            function ($scope, $state, $cart, Cupom, Order, $ionicPopup, $ionicLoading, $cordovaBarcodeScanner) {
 
                 var cart = $cart.get();
+                $scope.cupom = cart.cupom;
                 $scope.items = cart.items;
-                $scope.total = cart.total;
+                $scope.total = $cart.getTotalFinal();
 
                 $scope.removeItem = function (i) {
                     //remove o item do carrinho
@@ -24,7 +14,7 @@ angular.module('starter.controllers')
                     //remove o ítem da listagem da página
                     $scope.items.splice(i, 1);
                     //atualixa o total do carrinho
-                    $scope.total = $cart.get().total;
+                    $scope.total = $cart.getTotalFinal();
                 };
 
 
@@ -38,11 +28,21 @@ angular.module('starter.controllers')
 
                 $scope.save = function () {
                     //copiando os items para não alterar os items da view
-                    var items = angular.copy($scope.items);
-                    angular.forEach(items, function (item) {
+                    var o = {items: angular.copy($scope.items)};
+                    angular.forEach(o.items, function (item) {
                         item.product_id = item.id;
                     });
 
+                    if($scope.cupom.value){
+                        if($cart.get().cupom.value > $cart.get().total){
+                            $ionicPopup.alert({
+                                title: "Erro",
+                                template: 'O valor do cupom é maior que o valor do pedido! Adicione mais itens ou remova o cupom.'
+                            });
+                            return;
+                        }
+                        o.cupom_code = $scope.cupom.code;
+                    }
 
                     //Exibindo a mensagem de carregamento
                     $ionicLoading.show({
@@ -50,7 +50,8 @@ angular.module('starter.controllers')
                     });
 
                     //Salvando o pedido
-                    Order.save({id: null}, {items: items}, function (data) {
+
+                    Order.save({id: null}, o, function (data) {
                         //escondento do carregador
                         $ionicLoading.hide();
                         //redirecinando para a página de sucesso
@@ -68,5 +69,47 @@ angular.module('starter.controllers')
                         })
                     });
                 };
+
+                //Ler QRCode
+                $scope.readBarCode = function(){
+                    //Ativando o scanner de código de barras
+                    $cordovaBarcodeScanner
+                        .scan()
+                        .then(function(barcodeData) {
+                            getValueCupom(barcodeData.text);
+                        }, function(error) {
+                            $ionicPopup.alert({
+                                title: 'Advertência',
+                                template: 'Não foi possível ler o QRCode. Tente novamente.'
+                            })
+                        });
+
+                };
+
+                $scope.removeCupom = function(){
+                    $cart.removeCupom();
+                    $scope.cupom = $cart.get().cupom;
+                    $scope.total = $cart.getTotalFinal();
+                };
+
+                //Consulta o cupom na api
+                function getValueCupom(code){
+                    $ionicLoading.show({
+                        template: 'Carregando..'
+                    });
+                    Cupom.get({code: code}, function(data){
+                       $cart.setCupom(data.data.code, data.data.value);
+                        $scope.cupom = $cart.get().cupom;
+                        $scope.total = $cart.getTotalFinal();
+                        $ionicLoading.hide();
+                    }, function(responseError){
+                        $ionicLoading.hide();
+                        $ionicPopup.alert({
+                            title: 'Advertência',
+                            template: 'Cupom Inválido'
+                        })
+                    });
+                }
+
 
             }]);

@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fd34705-24fe-4c99-9ac5-dd67f2b9b132" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Transformers/CupomTransformer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/LICENSE.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/CupomRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/CupomRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php" afterPath="$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/bower.json" afterPath="$PROJECT_DIR$/ionic/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/config.xml" afterPath="$PROJECT_DIR$/ionic/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/index.html" afterPath="$PROJECT_DIR$/ionic/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/app.js" afterPath="$PROJECT_DIR$/ionic/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/controllers/client/checkout.js" afterPath="$PROJECT_DIR$/ionic/www/js/controllers/client/checkout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js" afterPath="$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/controllers/client/order.js" afterPath="$PROJECT_DIR$/ionic/www/js/controllers/client/order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/controllers/login.js" afterPath="$PROJECT_DIR$/ionic/www/js/controllers/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/js/services/cart.js" afterPath="$PROJECT_DIR$/ionic/www/js/services/cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/.bower.json" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.js" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.min.js" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.min.js.map" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/angular-resource.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/bower.json" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/lib/angular-resource/package.json" afterPath="$PROJECT_DIR$/ionic/www/lib/angular-resource/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/templates/client/checkout.html" afterPath="$PROJECT_DIR$/ionic/www/templates/client/checkout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html" afterPath="$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html" />
     </list>
     <ignored path="laravel-codedelivery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17571,63 +17583,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CupomController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CupomController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CupomRepositoryEloquent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CupomTransformer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Transformers/CupomTransformer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding>
-                <element signature="e#45#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="checkout.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/checkout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="341">
+              <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/www/js/services/cart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -17636,28 +17606,18 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionic/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="73" column="36" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="36" />
+            <state relative-caret-position="403">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cupom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/www/js/services/cupom.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/www/js/services/order.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="1085">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -17678,8 +17638,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/Deliveryman/DeliverymanCheckoutController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/OrderRepositoryEloquent.php" />
         <option value="$PROJECT_DIR$/app/Transformers/DeliverymanTransformer.php" />
         <option value="$PROJECT_DIR$/app/Transformers/OrderItemTransformer.php" />
@@ -17702,32 +17660,34 @@
         <option value="$PROJECT_DIR$/ionic/www/js/services/product.js" />
         <option value="$PROJECT_DIR$/ionic/www/js/services/localStorage.js" />
         <option value="$PROJECT_DIR$/ionic/www/templates/login.html" />
-        <option value="$PROJECT_DIR$/ionic/www/js/controllers/login.js" />
         <option value="$PROJECT_DIR$/ionic/www/templates/client/view_products.html" />
         <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/viewProduct.js" />
         <option value="$PROJECT_DIR$/ionic/www/templates/client/checkout_item_detail.html" />
         <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutDetail.js" />
-        <option value="$PROJECT_DIR$/ionic/www/js/services/cart.js" />
-        <option value="$PROJECT_DIR$/ionic/www/templates/client/checkout.html" />
         <option value="$PROJECT_DIR$/ionic/www/css/style.css" />
-        <option value="$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html" />
         <option value="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
         <option value="$PROJECT_DIR$/ionic/www/js/services/user.js" />
         <option value="$PROJECT_DIR$/ionic/www/js/filters/join.js" />
         <option value="$PROJECT_DIR$/app/Transformers/OrderTransformer.php" />
         <option value="$PROJECT_DIR$/app/Transformers/ClientTransformer.php" />
-        <option value="$PROJECT_DIR$/ionic/www/js/app.js" />
-        <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/order.js" />
         <option value="$PROJECT_DIR$/ionic/www/templates/client/order.html" />
-        <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js" />
         <option value="$PROJECT_DIR$/app/Repositories/CupomRepository.php" />
         <option value="$PROJECT_DIR$/app/Transformers/CupomTransformer.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CupomController.php" />
         <option value="$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/ionic/www/js/services/order.js" />
         <option value="$PROJECT_DIR$/ionic/www/js/services/cupom.js" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/ionic/www/js/services/cart.js" />
+        <option value="$PROJECT_DIR$/ionic/www/templates/client/checkout.html" />
+        <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/order.js" />
+        <option value="$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html" />
+        <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js" />
+        <option value="$PROJECT_DIR$/ionic/config.xml" />
+        <option value="$PROJECT_DIR$/ionic/www/js/controllers/login.js" />
+        <option value="$PROJECT_DIR$/ionic/bower.json" />
         <option value="$PROJECT_DIR$/ionic/www/index.html" />
+        <option value="$PROJECT_DIR$/ionic/www/js/app.js" />
         <option value="$PROJECT_DIR$/ionic/www/js/controllers/client/checkout.js" />
       </list>
     </option>
@@ -17764,7 +17724,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -17777,13 +17737,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
@@ -17961,35 +17915,45 @@
       <workItem from="1484735222653" duration="2933000" />
       <workItem from="1484782159177" duration="902000" />
       <workItem from="1484821983911" duration="3423000" />
-      <workItem from="1484825553778" duration="2883000" />
+      <workItem from="1484825553778" duration="3623000" />
+      <workItem from="1484833318048" duration="1094000" />
+      <workItem from="1484838061576" duration="2446000" />
+      <workItem from="1484864534445" duration="3898000" />
+      <workItem from="1484905411088" duration="7531000" />
+      <workItem from="1484919471671" duration="1632000" />
+      <workItem from="1484982710342" duration="2252000" />
+      <workItem from="1484987260090" duration="118000" />
+      <workItem from="1484995511108" duration="2271000" />
+      <workItem from="1485037750218" duration="6612000" />
+      <workItem from="1485051314274" duration="4803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375274000" />
+    <option name="totallyTimeSpent" value="408671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.24351747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.23869346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.107300885" sideWeight="0.51770836" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.101580136" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4960541" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.75648254" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473176" sideWeight="0.7613065" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.101580136" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -18002,13 +17966,13 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.101580136" sideWeight="0.48229167" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.24351747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.23869346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.4960541" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473176" sideWeight="0.75648254" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473176" sideWeight="0.7613065" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -18034,42 +17998,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/ClientCheckoutController.js" />
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1542">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Presenters/ProductPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/Client/ClientProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Transformers/ProductTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/www/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -18077,24 +18005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/localStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/checkout_item_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="20" column="85" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="17" column="18" selection-start-line="14" selection-start-column="16" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -18126,31 +18040,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutDetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1829">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="26" column="114" selection-start-line="26" selection-start-column="114" selection-end-line="26" selection-end-column="114" />
         </state>
       </provider>
     </entry>
@@ -18196,20 +18089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/filters/join.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Transformers/ClientTransformer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
@@ -18224,24 +18103,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/order.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -18322,61 +18187,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CupomController.php">
+    <entry file="file://$PROJECT_DIR$/app/Transformers/CupomTransformer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="124">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/filters/join.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" column="13" selection-start-line="6" selection-start-column="12" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/CupomRepositoryEloquent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="298">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Transformers/CupomTransformer.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CupomController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#45#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="73" column="36" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -18384,14 +18226,140 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2542">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="23" selection-start-line="11" selection-start-column="12" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/templates/client/checkout_successful.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/checkoutSuccessful.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/lib/angular-oauth2/dist/angular-oauth2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6975">
+          <caret line="225" column="35" selection-start-line="225" selection-start-column="25" selection-end-line="225" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/localStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="14" selection-start-line="12" selection-start-column="12" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/ionic.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/services/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/www/js/controllers/client/checkout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="341">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding />
         </state>
       </provider>

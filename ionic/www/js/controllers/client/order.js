@@ -1,7 +1,10 @@
 angular.module('starter.controllers')
-    .controller('ClientOrderCtrl', ['$scope', '$ionicLoading', 'Order',
-        function ($scope, $ionicLoading, Order) {
+    .controller('ClientOrderCtrl', ['$scope', '$ionicLoading', 'Order', '$cart',
+        function ($scope, $ionicLoading, Order, $cart) {
 
+            //limpa o carrinho
+            $cart.clear();
+            //inicializa a variável items
             var items = [];
 
             $ionicLoading.show({
