@@ -1,11 +1,10 @@
 <ion-view>
     <ion-nav-title>Pedido</ion-nav-title>
     <div class="bar bar-subheader">
-        <button class="button button-icon button-clear button-positive ion-plus"
-                ng-click="openListProducts()"></button>
         <h2 class="title">Total: R$ {{total}}</h2>
         <button class="button button-clear button-icon ion-minus-circled"
-                ng-click="showDelete = !showDelete" ng-class="{'button-assertive': showDelete, 'button-light': !showDelete}" ></button>
+                ng-click="showDelete = !showDelete"
+                ng-class="{'button-assertive': showDelete, 'button-light': !showDelete}"></button>
     </div>
     <ion-content class="padding has-subheader">
         <ion-list show-delete="showDelete">
@@ -16,23 +15,28 @@
             </ion-item>
 
             <ion-item ng-repeat="o in items" ng-click="openProductDetail($index)">
-                <h2>{{o.name}}</h2>
                 <div class="row">
                     <div class="col">
+                        <span class="item item-borderless item-thumbnail-left">
+                        <img src="img/product-photo-thumb.png" style="border:1px solid #ccc;">
+                        <h2>{{o.name}}</h2>
                         Qtd: {{o.qtd}}<br/>
                         <i class="ion ion-cash"> {{o.price}}</i>
+                        </span>
                     </div>
                     <div class="col text-right">
                         <i class="ion ion-social-usd"> {{o.qtd * o.price}}</i>
                     </div>
                 </div>
                 <ion-delete-button class="ion ion-minus-circled"
-                ng-click="removeItem($index)"></ion-delete-button>
+                                   ng-click="removeItem($index)"></ion-delete-button>
             </ion-item>
         </ion-list>
-        <button type="button" class="button button-calm button-full" ng-click="readBarCode()" ng-disabled="cupom.value != null">
+        <button type="button" class="button button-calm button-full" ng-click="readBarCode()"
+                ng-disabled="cupom.value != null">
             Adicionar cupom
         </button>
         <button type="button" class="button button-assertive button-full" ng-click="save()">Salvar pedido</button>
     </ion-content>
+    <button class="bt-add" ng-click="openListProducts()"></button>
 </ion-view>

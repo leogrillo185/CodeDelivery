@@ -1,0 +1,37 @@
+<ion-view>
+    <ion-nav-title>Pedido #{{order.id}}</ion-nav-title>
+    <ion-nav-buttons side="left" >
+        <button class="button button-clear button-icon ion-android-arrow-back" ng-click="backToOrders()"></button>
+    </ion-nav-buttons>
+    <div class="bar bar-subheader">
+            <h2 class="title">Total: R$ {{order.total}}</h2>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="item item-divider">
+            <h2>Pedido criado em {{order.created_at.date | limitTo: 10 | date: "dd/MM/yyyy"}}</h2>
+        </div>
+       <div class="item item-balanced" ng-show="order.cupom.data.code || false">
+           <span style="display: block; text-align: center;">Cupom NR {{order.cupom.data.code}}<br/> R$ {{order.cupom.data.value}}</span>
+       </div>
+
+        <ion-list>
+            <ion-item ng-repeat="item in order.items.data">
+                <div class="row">
+                    <div class="col">
+                        <span class="item item-borderless item-thumbnail-left">
+                        <img src="img/product-photo-thumb.png" style="border:1px solid #ccc;">
+                        <h2>{{item.product.data.name}}</h2>
+                        Qtd: {{item.qtd}}<br/>
+                        <i class="ion ion-cash"> {{item.price}}</i>
+                        </span>
+                    </div>
+                    <div class="col text-right">
+                        <i class="ion ion-social-usd"> {{item.qtd * item.price}}</i>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <button class="button button-positive button-full" ng-click="goToDelivery()">
+            <i class="ion ion-model-s"></i> Iniciar Entrega</button>
+    </ion-content>
+</ion-view>

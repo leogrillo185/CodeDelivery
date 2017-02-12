@@ -3,6 +3,7 @@
 namespace CodeDelivery\Http\Controllers\Api\Client;
 
 use CodeDelivery\Http\Requests;
+use CodeDelivery\Models\Order;
 use CodeDelivery\Presenters\OrderPresenter;
 use CodeDelivery\Repositories\OrderRepository;
 use CodeDelivery\Repositories\UserRepository;
@@ -43,6 +44,7 @@ class ClientCheckoutController extends Controller
 
     public function index()
     {
+
         $id =  Authorizer::getResourceOwnerId();
         $clientId = $this->userRepository->find($id)->client->id;
         $orders = $this->orderRepository
@@ -52,6 +54,14 @@ class ClientCheckoutController extends Controller
         })->paginate();
 
         return $orders;
+
+        /*return $this->orderRepository
+            ->skipPresenter(false)
+            ->scopeQuery(function($query){
+                return $query->skip(3) //Skip é o offset
+                             ->take(3); //take é o limit
+            })->all();*/
+
     }
 
     public function show($id){

@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-title>Meus pedidos</ion-nav-title>
+    <ion-content class="padding has-header">
+        <ion-refresher pulling-text="Puxe para atualizar.." on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="o in items" ng-click="openOrderDetail(o.id)">
+                <div class="row">
+                    <div class="col">
+                        <h2><strong>Pedido Nº {{o.id}}</strong></h2>
+                        <p>{{o.created_at.date|limitTo: 10| date: 'dd/MM/yyyy'}}</p>
+                        <p>{{o.product_names| limitTo: 2| join: ', '}}
+                        <p>Status: {{o.status_name}}</p>
+                       <!--<p>Client: {{o.client.data.name}}</p>-->
+                        <i class="ion ion-ios-cart"> {{o.product_names.length}} items</i>
+                    </div>
+
+                    <div class="col text-right">
+                        <i class="ion ion-social-usd"> {{o.total}}</i>
+                    </div>
+
+                </div>
+            </ion-item>
+            <ion-item ng-if="items && !items.length">
+                <h3 class="text-center"> Nenhuma entrega solicitada.</h3>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

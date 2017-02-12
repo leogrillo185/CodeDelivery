@@ -17,6 +17,8 @@ class Product extends Model implements Transformable
         'price'
     ];
 
+    
+
     public function category(){
         return $this->belongsTo(Category::class);
     }

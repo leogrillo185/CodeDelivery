@@ -1,12 +1,18 @@
 angular.module('starter.controllers')
     .controller('ClientCheckoutCtrl',
-        ['$scope', '$state', '$cart', 'Cupom', 'Order', '$ionicPopup', '$ionicLoading', '$cordovaBarcodeScanner',
-            function ($scope, $state, $cart, Cupom, Order, $ionicPopup, $ionicLoading, $cordovaBarcodeScanner) {
+        ['$scope', '$state', '$cart', 'Cupom', 'ClientOrder', '$ionicPopup', '$ionicLoading', '$cordovaBarcodeScanner', 'User',
+            function ($scope, $state, $cart, Cupom, ClientOrder, $ionicPopup, $ionicLoading, $cordovaBarcodeScanner,  User) {
 
                 var cart = $cart.get();
                 $scope.cupom = cart.cupom;
                 $scope.items = cart.items;
                 $scope.total = $cart.getTotalFinal();
+
+                /*User.authenticated({include: 'client'}, function(data){
+                    //console.log(data.data.client);
+                }, function(responseError){
+
+                });*/
 
                 $scope.removeItem = function (i) {
                     //remove o item do carrinho
@@ -51,7 +57,7 @@ angular.module('starter.controllers')
 
                     //Salvando o pedido
 
-                    Order.save({id: null}, o, function (data) {
+                    ClientOrder.save({id: null}, o, function (data) {
                         //escondento do carregador
                         $ionicLoading.hide();
                         //redirecinando para a página de sucesso

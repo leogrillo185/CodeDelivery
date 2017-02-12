@@ -9,13 +9,22 @@ angular.module('starter.filters', []);
 
 angular.module('starter',
     ['ionic', 'starter.controllers', 'starter.services', 'starter.filters',
-        'angular-oauth2', 'ngResource', 'ngCordova'])
+        'angular-oauth2', 'ngResource', 'ngCordova', 'uiGmapgoogle-maps', 'pusher-angular'])
 
     .constant('appConfig', {
-        baseUrl: 'http://192.168.25.240:8000'
+        baseUrl: 'http://localhost:8000',
+        //baseUrl: 'http://192.168.25.240:8000',
+        pusherKey: '9c638e0ae1041e12a46f',
+        redirectAfterLogin: {
+            client: 'client.order',
+            deliveryman: 'deliveryman.order'
+        }
     })
 
-    .run(function ($ionicPlatform) {
+    .run(function ($ionicPlatform, $window, appConfig) {
+
+        $window.client = new Pusher(appConfig.pusherKey);
+
         $ionicPlatform.ready(function () {
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -69,15 +78,37 @@ angular.module('starter',
                 abstract: true,
                 cache: false,
                 url: '/client',
-                template: '<ion-nav-view/>'
+                templateUrl: 'templates/client/menu.html',
+                controller: 'ClientMenuCtrl'
             })
-                .state('client.order', {
+
+                .state('client.teste', {
                     cache: false,
+                    url: '/teste',
+                    templateUrl: 'templates/client/teste.html',
+                    controller: 'ClientTestCtrl'
+                })
+
+                .state('client.order', {
                     url: '/order',
                     templateUrl: 'templates/client/order.html',
                     controller: 'ClientOrderCtrl'
                 })
-            
+
+                .state('client.view_order', {
+                    cache:false,
+                    url: '/view_order/:id',
+                    templateUrl: 'templates/client/view_order.html',
+                    controller: 'ClientViewOrderCtrl'
+                })
+
+                .state('client.view_delivery', {
+                    cache: false,
+                    url: '/view_delivery/:id',
+                    templateUrl: 'templates/client/view_delivery.html',
+                    controller: 'ClientViewDeliveryCtrl'
+                })
+
                 .state('client.checkout', {
                     cache: false,
                     url: '/checkout',
@@ -102,6 +133,28 @@ angular.module('starter',
                     templateUrl: 'templates/client/view_products.html',
                     controller: 'ClientViewProductCtrl'
                 })
+
+                .state('deliveryman', {
+                    abstract: true,
+                    cache: false,
+                    url: '/deliveryman',
+                    templateUrl: 'templates/deliveryman/menu.html',
+                    controller: 'DeliverymanMenuCtrl'
+                })
+
+                    .state('deliveryman.order', {
+                        cache: false,
+                        url: '/order',
+                        templateUrl: 'templates/deliveryman/order.html',
+                        controller: 'DeliverymanOrderCtrl'
+                    })
+
+                    .state('deliveryman.view_order', {
+                        cache: false,
+                        url: '/view_order/:id',
+                        templateUrl: 'templates/deliveryman/view_order.html',
+                        controller: 'DeliverymanViewOrderlCtrl'
+                    })
 
         $urlRouterProvider.otherwise('/login');
 

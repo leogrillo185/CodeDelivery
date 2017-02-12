@@ -114,7 +114,6 @@ angular.module('starter.services')
                     code: null,
                     value: null
                 }
-
             })
         }
 

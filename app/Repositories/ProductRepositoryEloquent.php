@@ -30,6 +30,7 @@ class ProductRepositoryEloquent extends BaseRepository implements ProductReposit
         return $this->model->get(['id', 'name', 'price']);
     }
 
+
     /**
      * Boot up the repository, pushing criteria
      */

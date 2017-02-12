@@ -1,0 +1,41 @@
+<ion-side-menus enable-menu-with-back-views="true">
+
+    <ion-side-menu-content edge-drag-threshold="false" drag-content="false">
+        <ion-nav-bar class="bar bar-calm">
+            <ion-nav-buttons side="left">
+                <button class="button button-clear button-icon ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <!-- Minhas páginas são inclusas aqui -->
+        <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" id="menu-client">
+        <ion-content>
+            <header id="main-header">
+                <div class="item item-avatar item-calm item-icon-right">
+                    <img src="img/dafault-avatar.png">
+                    <h2>{{user.name}}</h2>
+                    <h3>{{user.email}}</h3>
+                    <i class="icon ion-android-create pull-right"></i>
+                </div>
+            </header>
+
+            <ion-list>
+                <ion-item menu-close class="item-icon-left item-borderless" ui-sref="deliveryman.order">
+                    <i class="icon ion-android-list"></i>
+                    Meus pedidos
+                </ion-item>
+                <ion-item menu-close class="item-icon-left item-borderless" ui-sref="client.checkout">
+                    <i class="icon ion-log-out"></i>
+                    Sair
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+        <ion-footer-bar class="bar bar-stable">
+            <h2 class="title">Versão 1.0</h2>
+        </ion-footer-bar>
+    </ion-side-menu>
+
+</ion-side-menus>

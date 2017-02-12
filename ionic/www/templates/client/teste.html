@@ -1,0 +1,15 @@
+<ion-view>
+    <ion-nav-title>Acompanhar Entrega</ion-nav-title>
+    <ion-nav-buttons side="left">
+        <button class="button button-clear button-icon ion-android-arrow-back" ng-click="backToOrders()"></button>
+    </ion-nav-buttons>
+
+    <div class="bar bar-subheader">
+        <h2 class="title">Pedido NR: #{{order.id}}</h2>
+    </div>
+
+    <ui-gmap-google-map control="map.control" center="map.center" bounds="map.bounds" class="has-subheader" options="map.options" zoom="map.zoom">
+        <ui-gmap-marker idKey="m.id" coords="m.coords" options="m.options"
+                        ng-repeat="m in markers"></ui-gmap-marker>
+    </ui-gmap-google-map>
+</ion-view><!-- Não colocar css diretamente na página pois causa problema ao  title que some -->

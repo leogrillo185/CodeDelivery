@@ -5,12 +5,15 @@
     </div>
     <ion-content class="padding has-subheader">
         <div class="list card">
-            <div class="item item-avatar">
+
+            <div class="item item-image">
+                <img src="img/product-photo.png" class="img-responsive">
+            </div>
+
+            <div class="item item-body">
                 <h2>{{product.name}}</h2>
-                <p>
-                    Qdt: {{product.qtd}}<br/>
-                    <i class="ion ion-cash"> {{product.price}}</i>
-                </p>
+                Qdt: {{product.qtd}}<br/>
+                <i class="ion ion-cash"> {{product.price}}</i>
             </div>
 
             <label class="item item-input">
@@ -23,7 +26,7 @@
             </button>
 
             <div class="item item-body">
-               <h2>Descrição</h2>
+                <h2>Descrição</h2>
                 <p>
                     {{product.description}}
                 </p>
