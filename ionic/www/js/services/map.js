@@ -37,6 +37,7 @@ angular.module('starter.services')
                 longitude: 0
             },
             zoom: 16,
+            fit: false,
             options:{
                 MapTypeId: 'roadmap',
                 zoomControl: false,

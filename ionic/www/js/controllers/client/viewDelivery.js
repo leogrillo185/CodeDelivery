@@ -1,9 +1,9 @@
 angular.module('starter.controllers')
     .controller('ClientViewDeliveryCtrl',
         ['$scope', 'ClientOrder', 'UserData', '$state', '$stateParams', '$ionicLoading',
-            '$ionicPopup', '$pusher', '$window', '$map', 'uiGmapIsReady',
+            '$ionicPopup', '$pusher', '$window', '$map', 'uiGmapGoogleMapApi',
             function ($scope, ClientOrder, UserData, $state, $stateParams, $ionicLoading,
-                      $ionicPopup, $pusher, $window, $map, uiGmapIsReady) {
+                      $ionicPopup, $pusher, $window, $map, uiGmapGoogleMapApi) {
 
                 $scope.map = $map;
                 $scope.markers = [];
@@ -13,9 +13,14 @@ angular.module('starter.controllers')
                     template: 'Carregando..'
                 });
 
+                uiGmapGoogleMapApi.then(function(maps){
+                    $ionicLoading.hide();
+                },function(responseError){
+                    $ionicLoading.hide();
+                });
+
                 ClientOrder.get({id: $stateParams.id, include: 'items,cupom'}, function(data){
                     $scope.order =   data.data;
-                    $ionicLoading.hide();
                     if($scope.order.status == 1){
                         initMarkers($scope.order);
                     }else{
@@ -32,9 +37,6 @@ angular.module('starter.controllers')
                             $state.go('client.order');
                         });
                     }
-                    console.log(data.data);
-                }, function(responseError){
-                    $ionicLoading.hide();
                 });
 
                 function initMarkers(order){
@@ -146,6 +148,7 @@ angular.module('starter.controllers')
                 $scope.backToOrders = function(){
                     $state.go('client.order');
                 }
+
                 
             }])
             .controller('CvdControlDescentralize', ['$scope','$map', function($scope,$map){
