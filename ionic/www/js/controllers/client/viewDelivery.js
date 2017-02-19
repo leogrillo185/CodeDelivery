@@ -147,6 +147,20 @@ angular.module('starter.controllers')
 
                 $scope.backToOrders = function(){
                     $state.go('client.order');
+                };
+
+                $scope.events = {
+                    position_changed: function(){
+                        $scope.$apply(function(){
+
+                            if($scope.map.fit){
+                                $scope.fitBounds = function(){
+                                    createBounds();
+                                }
+                            }
+
+                        })
+                    }
                 }
 
                 
